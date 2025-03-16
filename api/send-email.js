@@ -46,6 +46,7 @@ module.exports = async (event) => {
 
         try {
             // E-Mail senden
+            console.log('Starting to send email...');
             await transporter.sendMail({
                 from: `"MZM Portfolio Contact-Form" <${process.env.EMAIL_USER}>`,
                 to: process.env.EMAIL_TO,

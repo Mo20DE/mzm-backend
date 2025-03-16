@@ -3,7 +3,8 @@
   "functions": {
     "api/send-email.js": {
       "runtime": "@vercel/node@2.0.0",
-      "maxDuration": 30 
+      "memory": 1024,
+      "timeout": 30 
     }
   },
   "routes": [
