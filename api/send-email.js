@@ -54,9 +54,9 @@ module.exports = async (req, res) => {
     try {
         console.log('Sending email...');
         await transporter.sendMail({
-            from: `"MZM Portfolio Contact-Form" <${process.env.EMAIL_USER}>`,
+            from: `"MZM Website Contact Form" <${process.env.EMAIL_USER}>`,
             to: process.env.EMAIL_TO,
-            subject: 'A message from your contact-form on your portfolio website',
+            subject: "Message from your website's contact form",
             text: `From: ${name} (${email}) \n\n ${message}`,
             replyTo: email
         });
